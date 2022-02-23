@@ -13,3 +13,7 @@ jobs:
         run: |
           echo "Build API"
           sleep 10s
+      - name: Deploy pages
+        uses: JamesIves/github-pages-deploy-action@4.1.5
+        with:
+         folder: ./test-output/Spark
